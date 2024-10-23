@@ -108,7 +108,6 @@ public class Exercises {
                     max = maximum;
                 }
             }
-;
             int minmax = JOptionPane.showOptionDialog(
                     null,
                     result.toString(),
@@ -119,14 +118,10 @@ public class Exercises {
                     new String[]{"Find the minimum value ", "find the maximum value"},
                     null);
             switch (minmax) {
-                case -1:
-                    break;
-                case 0:
-                    JOptionPane.showMessageDialog(null, "The minimum value is:" + min);
-                    break;
-                case 1:
-                    JOptionPane.showMessageDialog(null, "The maximum value is:" + max);
-                    break;
+                case -1 -> {
+                }
+                case 0 -> JOptionPane.showMessageDialog(null, "The minimum value is: " + min);
+                case 1 -> JOptionPane.showMessageDialog(null, "The maximum value is: " + max);
             }
 
         }
